@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <style>
+        .a01{
+            color: blue;
+        }
+    </style>
+    <script>
+        $(function(){
+            var $a = $("#link01");
+            var $input = $("#input01");
+
+            var sId = $a.prop("id");
+            alert(sId);
+            $a.prop({"href":"http://www.baidu.comn","title":"这是百度连接","class":"a01"});
+
+            var sValue = $input.prop("value");
+            alert(sValue);
+
+            var sValue = $input.val();
+            alert(sValue);
+            $input.val("22222")
+        })
+    </script>
+</head>
+<body>
+    <!-- <a href="http://google.com" class="a01">谷歌</a> -->
+    <a href="https://www.baidu.com" id="link01">这是一个连接</a>
+    <input type="text" id="input01" value="111111">
+</body>
+</html>

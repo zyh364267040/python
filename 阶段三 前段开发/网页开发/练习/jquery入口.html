@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        window.onload = function(){
+            var oDiv = document.getElementById("div1");
+            alert("原生就是获取的div" + oDiv);
+        };
+        // $(document).ready(function(){
+        //     var $div = $("#div1");
+        //     alert("jquery获取的div" + $div);
+        // });
+        $(function(){
+            var $div = $("#div1");
+            alert("jquery获取的div" + $div);
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+        这是一个div
+    </div>
+</body>
+</html>

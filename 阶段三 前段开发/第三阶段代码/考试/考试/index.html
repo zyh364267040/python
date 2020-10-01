@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页 - 英雄人物系统 V5.87</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+                $("input[name='toAdd']").each(function(){  
+                    var currentAdd = $(this);  
+                    currentAdd.click(function(){  
+                        code = $(this).attr("systemIdVaule"); 
+                        alert("/add/" + code + ".html"); 
+                        $.get("/add/" + code + ".html", function(data, status){
+                            alert("数据: " + data + "\n状态: " + status);
+                        });
+                    });  
+                });  
+        });
+    </script>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-static-top ">
+        <div class="container">
+        <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">英雄人物</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mymenu">
+            <a href="">图书管理系统</a>
+            <a href="/index.html">图书和英雄信息</a>
+        </div>
+        </div>
+</div>
+<div class="container">
+
+    <div class="container-fluid">
+
+        <table class="table table-hover">
+            <tr>
+                <th>英雄名字</th>
+                <th>所属图书</th>
+            </tr>
+            {%content%}
+        </table>
+    </div>
+</div>
+</body>
+</html>            

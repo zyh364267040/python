@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 导入jquery对呀的js文件 -->
+    <script src="js/jquery-1.12.4.min.js"></script>;
+    <!-- 使用jquery代码需要重新开一个script标签 -->
+    <script>
+        // 原生js写法
+        window.onload = function(){
+            // 当前页面的标签和标签的资源使用数据都加载完成，onload事件才会触发
+            var oDiv = document.getElementById("div1");
+            alert(oDiv);
+        };
+        // $符号就是jquery的象征
+        // $本质就是函数，只不过这个函数名是（$）
+        // $(document).ready(function(){
+            // 获取标签和css样式匹配的标签规则一样
+            // 以后使用jquery，变量名都要以$符号开头
+            // var $div = $("#div1")
+            // alert($div)
+        // });
+        // juqery的简写方式
+        $(function(){
+            var $div = $("#div");
+            alert($div);
+        });
+
+        // ready等待页面标签加载完成以后就执行ready事件，不会等待资源数据加载完成
+    </script>
+</head>
+<body>
+    <div id="div1">哈哈</div>
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600171164899&di=d3b13246933338e41a6fdd13f64e9fe8&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F912ac08017fbd2c549e096fd81ad90bc3287057a15d1b-jyRojM_fw658" alt="">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 获取标签
+            var $div = $("div");
+            // jquery的方式获取标签内容
+            alert($div.html());
+            $div.html("<a href='www.baidu.com'>百度</a>");
+            // 扩展：追加内容
+            $div.append("<a href='www.google.com'>谷歌</a>");
+        });
+    </script>
+</head>
+<body>
+    <div>我是div标签</div>
+</body>
+</html>

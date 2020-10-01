@@ -1,0 +1,10 @@
+2020-09-20 20:10:51,614-<ipython-input-3-feba7c386f9b>[lineno:19]-DEBUG-我是一个debug几杯的日志信息
+2020-09-20 20:10:51,615-<ipython-input-3-feba7c386f9b>[lineno:20]-INFO-我是一个info几杯的日志信息
+2020-09-20 20:10:51,616-<ipython-input-3-feba7c386f9b>[lineno:21]-WARNING-我是一个warning几杯的日志信息
+2020-09-20 20:10:51,616-<ipython-input-3-feba7c386f9b>[lineno:22]-ERROR-我是一个error几杯的日志信息
+2020-09-20 20:10:51,617-<ipython-input-3-feba7c386f9b>[lineno:23]-CRITICAL-我是一个critical几杯的日志信息
+2020-09-20 20:11:43,041-<ipython-input-4-88a6c5c0f86d>[lineno:19]-DEBUG-我是一个debug级别的日志信息
+2020-09-20 20:11:43,043-<ipython-input-4-88a6c5c0f86d>[lineno:20]-INFO-我是一个info级别的日志信息
+2020-09-20 20:11:43,044-<ipython-input-4-88a6c5c0f86d>[lineno:21]-WARNING-我是一个warning级别的日志信息
+2020-09-20 20:11:43,044-<ipython-input-4-88a6c5c0f86d>[lineno:22]-ERROR-我是一个error级别的日志信息
+2020-09-20 20:11:43,045-<ipython-input-4-88a6c5c0f86d>[lineno:23]-CRITICAL-我是一个critical级别的日志信息

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sName = "李四";
+        var iAge = 20;
+        var sSex = "男";
+        var sResule = sName + sSex;
+        alert(sResule);
+        // 字符串和数字进行拼接，底层自动把数字类型转成字符串，这种操作叫隐式类型转换
+        sResule = sName + iAge;
+        alert(sResule);
+
+        // 支持 +=
+        iAge += sSex
+        alert(iAge)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

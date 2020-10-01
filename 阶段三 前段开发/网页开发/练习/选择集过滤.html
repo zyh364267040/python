@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            var $div = $("div").has("#mytext");
+            $div.css({"background":"yellow"});
+
+            var $div = $("div").eq(1);
+            $div.css({"background":"blue"});
+        });
+    </script>
+</head>
+<body>
+    <div>
+        这是一个div
+        <input type="text" id="mytext">
+    </div>
+
+    <div>
+        这是第二个div
+        <input type="text">
+        <br>
+        <input type="button" value="按钮">
+    </div>
+</body>
+</html>
